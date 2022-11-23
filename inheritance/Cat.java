@@ -1,8 +1,8 @@
 package javaTut.inheritance;
 
-public class Cat extends Animal{
+abstract public class Cat extends Animal{
     public static void main(String[] args) {
-        Cat obj =  new Cat();
-        obj.speak();
+        // Cat obj =  new Cat();
+        // // obj.speak();
     }
 }
