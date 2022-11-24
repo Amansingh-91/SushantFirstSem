@@ -1,14 +1,14 @@
 package javaTut;
 
-public class Car {
-    String brand;
+public class Car extends Brand {
+    
     String carName;
     String color;
     int passangerCapacity;
     boolean headlamp;
     
     Car(){
-        this.brand = "unknown";
+        
         this.carName = "unKnown";
         this.color = "unknown";
         this.passangerCapacity = 0;
@@ -17,7 +17,7 @@ public class Car {
     
 
     public Car(String brand, String carName, String color, int passangerCapacity, boolean headlamp) {
-        this.brand = brand;
+        super(brand, "Car");
         this.carName = carName;
         this.color = color;
         this.passangerCapacity = passangerCapacity;
@@ -42,7 +42,7 @@ public class Car {
         }
     }
     public void carDetails(){
-        System.out.printf("Brand name: %s\ncar name: %s\nseat capacity: %d\ncar color: %s\nHeadlamp status: %b\n",this.brand,this.carName,this.passangerCapacity,this.color,this.headlamp);
+        System.out.printf("Brand name: %s\ncar name: %s\nseat capacity: %d\ncar color: %s\nHeadlamp status: %b\n",this.getBrandName(),this.carName,this.passangerCapacity,this.color,this.headlamp);
     }
 
 
