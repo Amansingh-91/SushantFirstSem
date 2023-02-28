@@ -1,13 +1,15 @@
 package javaTut.inheritance;
-abstract class Animal{
-    String name;
-    int age;
+class Animal{
+    private String name;
+    private int age;
     
     void eat(){
         System.out.println("eating");
     }
 
-    abstract void speak();
+    void speak(){
+        System.out.println("speaking");
+    }
 
     public Animal(){
         this.name = "unknown";
@@ -19,5 +21,22 @@ abstract class Animal{
         this.age = age;
         System.out.println("in Animal constructor");
     }
+
+    public String getName(){
+        return this.name;
+    }
+
+    public void setName(String name){
+        this.name =  name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     
 }

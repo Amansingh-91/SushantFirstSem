@@ -1,0 +1,8 @@
+check if a dataframe has any missing values?
+replace missing values of multiple numeric columns with the mean?
+Group data by Manufacturer
+
+sort cars based on price high to low
+
+give top 10 costly cars
+

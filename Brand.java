@@ -4,10 +4,10 @@ public class Brand {
     private String brandName;
     private String ProoductType;
 
-    // public Brand() {
-    //     this.brandName = "unknown";
-    //     this.ProoductType = "unknown";
-    // }
+    public Brand() {
+        this.brandName = "unknown";
+        this.ProoductType = "unknown";
+    }
     public Brand(String brandName, String prooductType) {
         this.brandName = brandName;
         ProoductType = prooductType;
