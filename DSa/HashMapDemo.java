@@ -20,6 +20,10 @@ public class HashMapDemo {
         students.remove(1);
         System.out.println(students);
 
+        // forEach
+        // syntax
+        // for(Data_type variable_name : itterable_name){ }
+
         for (Map.Entry<Integer,String> entry : students.entrySet()) {
             System.out.println("roll no. :" + entry.getKey() + " name :" + entry.getValue());
         }
