@@ -29,7 +29,7 @@ public class FractionalKnapsack {
                 capacity = 0;
             }
             i++;
-            System.out.println( max);
+            // System.out.println( max);
         }
         
         return max;
