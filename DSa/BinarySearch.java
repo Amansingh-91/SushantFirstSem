@@ -1,4 +1,4 @@
-package javaTut.DSa;
+
 
 class BinarySearch{
     public static int binarySearch(int arr[],int key){

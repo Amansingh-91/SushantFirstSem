@@ -71,17 +71,34 @@ class BST{
         System.out.print(root.data + " ");
         Inorder(root.right);
     }
+    public void printNodes(Node node){
+
+        if (node == null)
+            return;
+        if(node.data==0){
+            System.out.println("Division by zero is undefined");
+            return;
+        }
+        printNodes(node.left);
+    
+        if(node.data % root.data == 0){
+            System.out.print(node.data + " ");
+        }
+        printNodes(node.right);
+    }
     public static void main(String[] args) {
         BST b = new BST();
         b.root = insert(b.root, 20);
         b.root = insert(b.root, 10);
         b.root = insert(b.root, 30);
-        b.root = insert(b.root, 15);
+        b.root = insert(b.root, 12);
         b.root = insert(b.root, 5);
         b.root = insert(b.root, 25);
         b.root = insert(b.root, 40);
         Inorder(b.root);
-        b.root = delete(b.root, 5);
-        Inorder(b.root);
+        System.out.println();
+        b.printNodes(b.root);
+        // b.root = delete(b.root, 5);
+        // Inorder(b.root);
     }
 }
